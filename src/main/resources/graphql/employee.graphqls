@@ -1,0 +1,19 @@
+type Employee{
+  id:ID!
+  name:String
+  age:Int
+}
+
+input EmployeeDto{
+  name:String
+  age:Int
+}
+
+type Mutation{
+  createEmployee(employeeDto:EmployeeDto):Employee 
+}
+
+type Query {
+  listEmployees: [Employee]!
+  getEmployeeById(id:ID): Employee
+}
