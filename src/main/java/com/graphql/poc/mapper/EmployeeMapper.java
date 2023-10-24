@@ -6,7 +6,7 @@ import com.graphql.poc.dto.EmployeeDto;
 import com.graphql.poc.entity.Employee;
 
 /**
- * imran
+ * imran.ansari
  */
 @Component
 public class EmployeeMapper {
