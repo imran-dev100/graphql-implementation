@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.graphql.poc.entity.Employee;
 
 /**
- * imran
+ * imran.ansari
  */
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long>{
