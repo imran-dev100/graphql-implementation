@@ -11,7 +11,7 @@ import com.graphql.poc.mapper.EmployeeMapper;
 import com.graphql.poc.repository.EmployeeRepository;
 
 /**
- * imran.ansari
+ * imran
  */
 @Service
 public class EmployeeService {
