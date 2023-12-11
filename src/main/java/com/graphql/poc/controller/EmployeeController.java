@@ -13,9 +13,6 @@ import com.graphql.poc.dto.EmployeeDto;
 import com.graphql.poc.entity.Employee;
 import com.graphql.poc.service.EmployeeService;
 
-/**
- * imran.ansari
- */
 @Controller
 @RequestMapping("/employee")
 public class EmployeeController {
