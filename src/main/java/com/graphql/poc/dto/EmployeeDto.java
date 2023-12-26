@@ -9,7 +9,6 @@ import lombok.Getter;
 @AllArgsConstructor
 @Getter
 public class EmployeeDto{
-	
 	private String name;
 	private int age;
 }
