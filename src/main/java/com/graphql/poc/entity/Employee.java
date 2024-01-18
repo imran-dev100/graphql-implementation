@@ -10,9 +10,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-/**
- * imran.ansari
- */
 @Builder
 @Getter
 @NoArgsConstructor
