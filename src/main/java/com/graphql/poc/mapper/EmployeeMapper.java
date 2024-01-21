@@ -5,9 +5,6 @@ import org.springframework.stereotype.Component;
 import com.graphql.poc.dto.EmployeeDto;
 import com.graphql.poc.entity.Employee;
 
-/**
- * imran.ansari
- */
 @Component
 public class EmployeeMapper {
 
