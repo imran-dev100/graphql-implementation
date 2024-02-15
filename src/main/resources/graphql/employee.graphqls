@@ -14,6 +14,9 @@ type Mutation{
 }
 
 type Query {
+  """
+  ! means that value cannot be null
+  """
   listEmployees: [Employee]!
   getEmployeeById(id:ID): Employee
 }
