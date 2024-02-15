@@ -30,7 +30,7 @@ public class EmployeeController {
 		return employeeService.getAllEmployees();
 	}
 
-        // QueryMapping is used for reading the data
+        // QueryMapping is used for reading the records.
 	@QueryMapping("getEmployeeById")
 	public Employee getEmployeeById(@Argument long id){
 		return employeeService.fetchById(id);
