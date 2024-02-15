@@ -24,7 +24,7 @@ public class EmployeeController {
 		return employeeService.createOrUpdateEmployee(employeeDto);
 	}
 
-	// QueryMapping is used for reading the data
+	// QueryMapping is used for reading the records.
 	@QueryMapping("listEmployees")
 	public List<Employee> listEmployees(){
 		return employeeService.getAllEmployees();
