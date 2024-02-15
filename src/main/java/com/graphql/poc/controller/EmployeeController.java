@@ -18,16 +18,19 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
 
+	// MutationMapping is used for creating, updating, or deleting records.
 	@MutationMapping("createEmployee")
 	public Employee createEmployee(@Argument EmployeeDto employeeDto) {
 		return employeeService.createOrUpdateEmployee(employeeDto);
 	}
-	
+
+	// QueryMapping is used for read the data
 	@QueryMapping("listEmployees")
 	public List<Employee> listEmployees(){
 		return employeeService.getAllEmployees();
 	}
-	
+
+        // QueryMapping is used for read the data
 	@QueryMapping("getEmployeeById")
 	public Employee getEmployeeById(@Argument long id){
 		return employeeService.fetchById(id);
