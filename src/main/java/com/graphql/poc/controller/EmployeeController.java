@@ -15,23 +15,22 @@ import com.graphql.poc.service.EmployeeService;
 @RequestMapping("/employee")
 public class EmployeeController {
 
-	
 	@Autowired
 	private EmployeeService employeeService;
 
-	// MutationMapping is used for creating, updating, or deleting records.
+	// This MutationMapping is used for creating, updating, or deleting records.
 	@MutationMapping("createEmployee")
 	public Employee createEmployee(@Argument EmployeeDto employeeDto) {
 		return employeeService.createOrUpdateEmployee(employeeDto);
 	}
 
-	// QueryMapping is used for reading the records.
+	// This QueryMapping is used for listing all the records.
 	@QueryMapping("listEmployees")
 	public List<Employee> listEmployees(){
 		return employeeService.getAllEmployees();
 	}
 
-        // QueryMapping is used for reading the records.
+        // This QueryMapping is used for reading the record by id.
 	@QueryMapping("getEmployeeById")
 	public Employee getEmployeeById(@Argument long id){
 		return employeeService.fetchById(id);
