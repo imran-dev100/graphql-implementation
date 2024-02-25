@@ -6,7 +6,6 @@ import com.graphql.poc.entity.Employee;
 
 @Component
 public class EmployeeMapper {
-
 	public Employee convertToEntity(EmployeeDto employeeDto) {
 		return Employee.builder().name(employeeDto.getName()).age(employeeDto.getAge()).build();
 	}
