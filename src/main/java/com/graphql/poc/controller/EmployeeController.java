@@ -25,7 +25,7 @@ public class EmployeeController {
 	public Employee createEmployee(@Argument EmployeeDto employeeDto) {
 		return employeeService.createOrUpdateEmployee(employeeDto);
 	}
-
+	
 	// This QueryMapping is used for listing all the records.
 	@QueryMapping("listEmployees")
 	public List<Employee> listEmployees(){
@@ -37,4 +37,5 @@ public class EmployeeController {
 	public Employee getEmployeeById(@Argument long id){
 		return employeeService.fetchById(id);
 	}
+	
 }
